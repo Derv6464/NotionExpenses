@@ -41,5 +41,5 @@ jobs:
       
         
     - name: Run file
-      run: python3 -u -m main.py
+      run: python main.py
       

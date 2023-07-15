@@ -3,8 +3,14 @@
 
 name: Python application
 env: 
-        HOLIDAY_API: ${{secrets.HOLIDAY_API}}
-
+        NOTION_AUTH : ${{secrets.NOTION_AUTH}}
+        WEEKLY_DB : ${{secrets.WEEKLY_DB}}
+        JULY_DB : ${{secrets.JULY_DB}}
+        AUG_DB : ${{secrets.AUG_DB}}
+        SEPT_DB : ${{secrets.SEPT_DB}}
+        OCT_DB : ${{secrets.OCT_DB}}
+        NOV_DB : ${{secrets.NOV_DB}}
+        DEC_DB : ${{secrets.DEC_DB}}
 on:
   push:
     branches: [ "main" ]
@@ -31,7 +37,7 @@ jobs:
         pip install datetime
         pip install requests
         pip install python-dotenv
-        pip install plotly.graph_objects
+        pip install plotly
         pip install os
       
         

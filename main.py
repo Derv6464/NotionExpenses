@@ -5,9 +5,7 @@ import plotly.graph_objects as go
 from datetime import datetime, date
 
 load_dotenv()
-types = {
-    "Food":"fbfe2eea-aa2b-442f-9966-fefcf970ecd5"
-}
+
 header = {
     "Authorization": "Bearer " + str(os.getenv("NOTION_AUTH")),
     "Content-Type": "application/json",
